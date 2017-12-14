@@ -23,7 +23,7 @@ class ViewController: UICollectionViewController, UICollectionViewDelegateFlowLa
         let flow = layout as! UICollectionViewFlowLayout
         flow.sectionInset = UIEdgeInsetsMake(10, 20, 30, 20)
         
-        self.collectionView?.register(HeaderCell.self, forCellWithReuseIdentifier: "HEADER")
+        self.collectionView?.register(HeaderCell.self, forSupplementaryViewOfKind: UICollectionElementKindSectionHeader, withReuseIdentifier: "HEADER")
         
         flow.headerReferenceSize = CGSize(width: 100, height: 25)
     }
